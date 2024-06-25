@@ -1,0 +1,6 @@
+ docker build --build-arg="APP_VERSION=1.0.2" -t bsn/bsn:1.0.0 -f ../docker/backend/Dockerfile .    ---> for backend from backend folder the same for frontend
+ docker build -t bsn/bsn-ui:1.0.0 -f ../docker/frontend/Dockerfile .
+
+
+docker compose up -d
+

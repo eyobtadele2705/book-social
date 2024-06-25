@@ -1,0 +1,44 @@
+server:
+  port: 8088
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/book_network_db
+    username: eyob
+    password: eyob
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  mail:
+    host: smtp.gmail.com
+    port: 465
+    username: eyob1810@gmail.com
+    password: vgaw ezsx mjnh naot
+    properties:
+      mail:
+        smtp:
+          auth: true
+          ssl:
+            enable: true
+            trust: "*"
+        starttls:
+          enabled: true
+    protocol: smtp
+
+application:
+  security:
+    jwt:
+      secret-key: a80d0c68baeb28ead5bae1a86689e7e80653f46e0f6e757914114ebae9b72493cb2250ffc10c6c3ad17830774360993e3e3ecbc078a16e44eda781cbde8adbc1
+      expiration: 28800000
+  mailing:
+    frontend:
+      activation-url: http://localhost:4200/activate-account
+  file:
+    upload:
+      photos-output-path: ./uploads
