@@ -66,13 +66,14 @@ public class BeanConfig {
 //                AUTHORIZATION
 //        ));
         config.setAllowedHeaders(Arrays.asList("*"));
-        config.setAllowedMethods(Arrays.asList(
-                "GET",
-                "POST",
-                "PUT",
-                "DELETE",
-                "PATCH"
-        ));
+//        config.setAllowedMethods(Arrays.asList(
+//                "GET",
+//                "POST",
+//                "PUT",
+//                "DELETE",
+//                "PATCH"
+//        ));
+        config.setAllowedMethods(Arrays.asList("*"));
         source.registerCorsConfiguration("/**", config);
         return new CorsFilter(source);
     }
