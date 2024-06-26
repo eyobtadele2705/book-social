@@ -20,7 +20,7 @@ ENV DB_URL=jdbc:postgresql://postgresql-book-cont:5432/book_network_db
 ENV ACTIVE_PROFILE=${PROFILE}
 ENV JAR_VERSION=${APP_VERSION}
 ENV EMAIL_HOST_NAME=missing_host_name
-ENV EMAIL_USER_NAME=missing_user_name
+ENV EMAIL_USERNAME=missing_user_name
 ENV EMAIL_PASSWORD=missing_password
 ENV DONT_USE_THIS=missing_password
 
