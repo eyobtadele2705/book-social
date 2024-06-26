@@ -15,7 +15,7 @@ on:
 jobs:
   build-image:
     name: Build Frontend Docker Image
-    runs-on: ubuntu
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -44,7 +44,7 @@ jobs:
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/bsn-ui:${{ steps.extract_version.outputs.VERSION }},${{ secrets.DOCKERHUB_USERNAME }}/bsn-ui:latest
   deploy:
     name: Deploy frontend
-    runs-on: ubuntu
+    runs-on: ubuntu-latest
     needs: [build-image]
     steps:
       - name: Create deployment folder
