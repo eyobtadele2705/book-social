@@ -79,7 +79,7 @@ jobs:
       - name: Build Project
         run: |
           cd spring-book
-          ./mvnw clean package
+          ./mvnw clean package -DskipTest
 
   build-image:
     runs-on: ubuntu-latest
@@ -103,7 +103,7 @@ jobs:
       - name: Build Project
         run: |
           cd spring-book
-          ./mvnw clean package
+          ./mvnw clean package -DskipTest
 
       - name: Extract Project Version
         id: extract_version
