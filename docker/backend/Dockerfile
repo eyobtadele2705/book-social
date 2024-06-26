@@ -22,5 +22,6 @@ ENV JAR_VERSION=${APP_VERSION}
 ENV EMAIL_HOST_NAME=missing_host_name
 ENV EMAIL_USER_NAME=missing_user_name
 ENV EMAIL_PASSWORD=missing_password
+ENV DONT_USE_THIS=missing_password
 
 CMD java -Dspring.profiles.active=${ACTIVE_PROFILE} -Dspring.datasource.url=${DB_URL} -jar spring-book-${JAR_VERSION}.jar
