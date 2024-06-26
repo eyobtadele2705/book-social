@@ -25,7 +25,10 @@ jobs:
         with:
           java-version: '17'
           distribution: 'corretto'
-
+          
+      - name: Grant execute permission for mvnw
+        run: chmod +x spring-book/mvnw
+        
       - name: Compile Project
         run: |
           cd spring-book
@@ -46,6 +49,9 @@ jobs:
           java-version: '17'
           distribution: 'corretto'
 
+      - name: Grant execute permission for mvnw
+        run: chmod +x spring-book/mvnw
+        
       - name: Running Unit Test
         run: |
           cd spring-book
@@ -67,6 +73,9 @@ jobs:
           java-version: '17'
           distribution: 'corretto'
 
+      - name: Grant execute permission for mvnw
+        run: chmod +x spring-book/mvnw
+        
       - name: Build Project
         run: |
           cd spring-book
@@ -88,6 +97,9 @@ jobs:
           java-version: '17'
           distribution: 'corretto'
 
+      - name: Grant execute permission for mvnw
+        run: chmod +x spring-book/mvnw
+        
       - name: Build Project
         run: |
           cd spring-book
