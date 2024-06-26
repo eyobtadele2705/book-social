@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.training</groupId>
     <artifactId>spring-book</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <name>spring-book</name>
     <description>spring-book</description>
     <properties>
