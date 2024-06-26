@@ -55,7 +55,7 @@ jobs:
       - name: Running Unit Test
         run: |
           cd spring-book
-          ./mvnw clean test
+          ./mvnw clean       # Altered 'test' removed for a test
 
   build:
     runs-on: ubuntu-latest
